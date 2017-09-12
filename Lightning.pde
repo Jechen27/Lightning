@@ -7,8 +7,12 @@ void setup()
   size(300,300);
   strokeWeight(5); 
   background(0);
-  fill(66,10,10);
-  rect(-5,250,310,60);
+  fill (150,10,10);
+  stroke(150,10,10);
+  rect(125,0,50,300);
+  fill (255,0,0);
+  stroke(255,0,0);
+  ellipse (150,150,30,300);
 }
 void draw()
 {
@@ -21,9 +25,8 @@ void draw()
     line(startX,startY,endX,endY);
     startY = endY;
     startX = endX;
+    //if (get(endX,endY,1,1) == (66,10,60)
   }
-  fill(255,216,0);
-  ellipse(150,-10,80,80);
 }
 void mousePressed()
 {
@@ -32,4 +35,3 @@ void mousePressed()
   endY=0;
   endX=150;
 }
-
